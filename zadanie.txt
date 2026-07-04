@@ -1,0 +1,13 @@
+Rejestracja na zajęcia Fitness (Listy rezerwowe) 
+
+Baza danych: Zajęcia (typ, pojemność max), Zapisy (użytkownik, status: głowna/rezerwowa). 
+
+Webowe UI: Lista dostępnych zajęć w tygodniu, przycisk "Zapisz się" przy każdym. 
+
+Algorytm: Zarządzanie kolejką. Jeśli zajęcia mają max 20 osób, 21. osoba trafia na listę rezerwową z odpowiednią pozycją (np. pozycja 1, 2, 3 w kolejce). Wypisanie się kogoś z listy głównej "wciąga" pierwszą osobę z rezerwy. 
+
+REST + Swagger: Endpoint POST do wypisania się z zajęć, który uruchamia logikę kolejkowania. 
+
+Security: Standardowi użytkownicy mogą tylko się zapisywać/wypisywać. 
+
+Test: Testowanie przejścia z listy rezerwowej na listę główną w przypadku zwolnienia miejsca.
